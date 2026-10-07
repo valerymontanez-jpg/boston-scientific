@@ -1,0 +1,123 @@
+/* Quitamos los espacios que el navegador pone por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Toda la página */
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Pantalla azul */
+.pantalla-inicio {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #003C75;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Todo el contenido del logo */
+.logo {
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BOSTON SCIENTIFIC */
+.nombre-empresa {
+    font-family: "Bodoni 72", "Bodoni MT", Didot, Georgia, serif;
+
+    font-size: clamp(4rem, 10vw, 7rem);
+
+    line-height: 0.70;
+
+    font-weight: 400;
+
+    letter-spacing: -0.06em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Segunda línea */
+.nombre-empresa span:last-child {
+    margin-left: -0.08em;
+}
+
+/* ADVANCING SCIENCE FOR LIFE */
+.eslogan {
+    margin-top: 55px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: clamp(1.5rem, 3.2vw, 2.6rem);
+
+    font-style: italic;
+
+    font-weight: 400;
+
+    letter-spacing: -0.02em;
+
+    white-space: nowrap;
+}
+
+/* ™ */
+.eslogan sup {
+    font-size: 0.4em;
+
+    position: relative;
+    top: -0.3em;
+
+    margin-left: 2px;
+}
+
+
+/* ========================= */
+/* CELULARES */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    .nombre-empresa {
+        font-size: clamp(3.2rem, 16vw, 5rem);
+    }
+
+    .eslogan {
+        margin-top: 40px;
+
+        font-size: clamp(1.05rem, 5vw, 1.5rem);
+    }
+}
+
+
+/* BOTÓN EMPEZAR */
+
+.boton-empezar {
+    margin-top: 75px;
+
+    padding: 14px 42px;
+
+    background-color: transparent;
+    color: white;
+
+    border: 2px solid white;
+    border-radius: 4px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+
+    letter-spacing: 0.08em;
+
+    cursor: pointer;
+}
