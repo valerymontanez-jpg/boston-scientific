@@ -13,9 +13,11 @@
 
 <body>
 
-    <main class="pantalla-inicio">
+    <!-- PRIMERA PANTALLA -->
+    <main id="pantalla-inicio" class="pantalla-inicio">
 
         <div class="logo">
+
             <div class="nombre-empresa">
                 <span>Boston</span>
                 <span>Scientific</span>
@@ -24,12 +26,112 @@
             <div class="eslogan">
                 Advancing science for life<sup>™</sup>
             </div>
+
             <button class="boton-empezar" onclick="empezar()">
                 EMPEZAR
             </button>
+
         </div>
 
     </main>
 
+
+<!-- SEGUNDA PANTALLA -->
+<main id="pantalla-opciones" class="pantalla-opciones">
+
+    <div class="contenido-opciones">
+
+        <h1>¿Qué necesitas hacer hoy?</h1>
+
+        <div class="botones-opciones">
+
+            <button class="boton-opcion" onclick="irARegistrar()">
+                REGISTRAR<br>INFORMACIÓN
+            </button>
+
+            <button class="boton-opcion" onclick="irABuscar()">
+                BUSCAR<br>INFORMACIÓN
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- PÁGINA 3.1 — REGISTRAR -->
+<main id="pantalla-registrar" class="pantalla-registrar">
+
+    <button class="boton-volver" onclick="volverAOpciones()">
+    ← VOLVER
+    </button>
+    
+    <div class="contenido-tercera">
+
+        <h1>Registrar información</h1>
+
+    </div>
+
+</main>
+
+
+<!-- PÁGINA 3.2 — BUSCAR -->
+<main id="pantalla-buscar" class="pantalla-buscar">
+    
+    <button class="boton-volver" onclick="volverAOpciones()">
+        ← VOLVER
+    </button>
+
+    <div class="contenido-tercera">
+
+        <h1>Buscar información</h1>
+
+        <div class="metodos-busqueda">
+
+            <div class="metodo-busqueda">
+
+                <h2>Escanear código de barras</h2>
+
+                <div class="lector-codigo">
+                    <span>📷</span>
+                    <p>Escanear código</p>
+                </div>
+
+            </div>
+
+
+            <div class="separador">
+                O
+            </div>
+
+
+            <div class="metodo-busqueda">
+
+                <h2>Introducir código manualmente</h2>
+
+                <input
+                    type="text"
+                    class="entrada-codigo"
+                    placeholder="Código de barras"
+                >
+
+                <button class="boton-buscar">
+                    BUSCAR
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+    <!-- Conexión con JavaScript -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
